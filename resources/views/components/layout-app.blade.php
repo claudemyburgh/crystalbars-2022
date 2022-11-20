@@ -48,7 +48,7 @@
     </script>
 </amp-analytics>
 <a href="#main" class="sr-only">Skip to main</a>
-<div id="swup" class="transition-swup">
+<div id="swup" class="transition-swup transition-duration">
     @include('partials._navigation')
     <main id="main" class="main">
         {{ $slot }}
