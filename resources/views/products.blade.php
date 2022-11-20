@@ -6,7 +6,7 @@
     <figure
       class="overflow-hidden rounded-md shadow-2xl shadow-primary/50 mb-6 h-60 md:h-auto relative z-20 w-full md:w-1/3 ">
       <img class="w-full max-w-full" height="732" width="540" loading="lazy"
-           src="{{ Vite::asset('resources/img/stand.jpg') }}" alt="{{config('app.name')}} stand at homemakers expo">
+           src="{{ asset('img/stand.jpg') }}" alt="{{config('app.name')}} stand at homemakers expo">
     </figure>
 
     <article class="w-full md:w-2/3 p-4 md:p-6 lg:p-8 rounded-md bg-white shadow space-y-4">
@@ -28,7 +28,7 @@
     <figure
       class="overflow-hidden rounded-md shadow-2xl shadow-primary/50 mb-6 h-60 md:h-auto relative z-20 w-full md:w-1/3 ">
       <img class="w-full max-w-full" height="732" width="540" loading="lazy"
-           src="{{ Vite::asset('resources/img/gate.jpg') }}" alt="{{config('app.name')}} install gate">
+           src="{{ asset('img/gate.jpg') }}" alt="{{config('app.name')}} install gate">
     </figure>
 
     <article class="w-full md:w-2/3 p-4 md:p-6 lg:p-8 rounded-md bg-white shadow space-y-4">

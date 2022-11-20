@@ -1,30 +1,41 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "autoprefixer": "^10.4.13",
-        "axios": "^1.1.3",
-        "laravel-vite-plugin": "^0.6.1",
-        "lodash": "^4.17.21",
-        "postcss": "^8.4.19",
-        "prettier": "^2.7.1",
-        "tailwindcss": "^3.2.4",
-        "tailwindcss-attributes": "^1.1.3",
-        "vanilla-headless": "^0.8.3",
-        "vite": "^3.2.4"
-    },
-    "dependencies": {
-        "@swup/a11y-plugin": "^2.1.0",
-        "@swup/progress-plugin": "^1.2.1",
-        "@swup/scroll-plugin": "^1.3.1",
-        "fslightbox": "^3.3.1",
-        "just-validate": "^3.8.1",
-        "simplelightbox": "^2.10.4",
-        "smooth-scrollbar": "^8.8.1",
-        "swiper": "^8.4.4",
-        "swup": "^2.0.19"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.3.1",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.1.3",
+    "laravel-mix": "^6.0.49",
+    "laravel-vite-plugin": "^0.6.1",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.19",
+    "postcss-import": "^14.0.1",
+    "prettier": "^2.7.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^12.1.0",
+    "tailwindcss": "^3.2.4",
+    "tailwindcss-attributes": "^1.1.3",
+    "vanilla-headless": "^0.8.3"
+  },
+  "dependencies": {
+    "@swup/a11y-plugin": "^2.1.0",
+    "@swup/progress-plugin": "^1.2.1",
+    "@swup/scroll-plugin": "^1.3.1",
+    "fslightbox": "^3.3.1",
+    "just-validate": "^3.8.1",
+    "simplelightbox": "^2.10.4",
+    "smooth-scrollbar": "^8.8.1",
+    "swiper": "^8.4.4",
+    "swup": "^2.0.19"
+  }
 }

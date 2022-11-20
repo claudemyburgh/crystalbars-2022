@@ -6,8 +6,8 @@
     <div class="gallery grid grid-cols-12 gap-4">
 
       @foreach($images as $img)
-        <a class="col-span-6 md:col-span-3 overflow-hidden shadow-2xl rounded-md" href=" {{ Vite::asset('resources/img/examples/' . $img) }}" >
-          <img class="min-h-full min-w-full object-cover" src=" {{ Vite::asset('resources/img/examples/' . $img) }}" alt="images	gallery ">
+        <a class="col-span-6 md:col-span-3 overflow-hidden shadow-2xl rounded-md" href=" {{ asset('img/examples/' . $img) }}" >
+          <img class="min-h-full min-w-full object-cover" src=" {{ asset('img/examples/' . $img) }}" alt="images	gallery ">
         </a>
       @endforeach
     </div>

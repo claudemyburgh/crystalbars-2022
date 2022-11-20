@@ -21,7 +21,7 @@
 
 
     </div>
-    <video class="absolute inset-0 min-h-full object-fill" preload="auto" autoplay loop muted  poster="{{ Vite::asset('resources/img/file.jpg')  }}" >
+    <video class="absolute inset-0 min-h-full object-fill" preload="auto" autoplay loop muted  poster="{{ asset('img/file.jpg')  }}" >
       <source src="{{ asset('videos/file.mp4') }}" type="video/mp4">
     </video>
 

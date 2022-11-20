@@ -10,7 +10,7 @@
 		px-7 py-7">
 			<div class="rounded-full rounded-tr-2xl w-24 h-24  md:w-48 md:h-48  overflow-hidden border-4
 			border-primary-500">
-				<img class="w-24 h-24 md:w-48 md:h-48 object-cover" src="{{ Vite::asset('resources/img/hendry.jpg') }}"
+				<img class="w-24 h-24 md:w-48 md:h-48 object-cover" src="{{ asset('img/hendry.jpg') }}"
 					 alt="Hendry Ollewagen at Crystal Bars">
 			</div>
 			<div class="space-y-3">
@@ -35,7 +35,7 @@
 		</div>
 	</div>
 
-	<img aria-hidden="true" class="absolute inset-0 object-cover min-w-full min-h-full opacity-30 mix z-0" src="{{ Vite::asset('resources/img/jp.jpg')}}"
+	<img aria-hidden="true" class="absolute inset-0 object-cover min-w-full min-h-full opacity-30 mix z-0" src="{{ asset('img/jp.jpg')}}"
 		 alt="burglar">
 
 	<svg aria-hidden="true" class="absolute inset-0 fill-current text-gray-50 z-0" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"

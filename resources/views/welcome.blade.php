@@ -7,7 +7,7 @@
     <figure
       class="overflow-hidden rounded-md shadow-2xl shadow-primary/50 mb-6 h-60 md:h-auto relative z-20 w-full md:w-1/3 ">
       <img class="w-full max-w-full" height="732" width="540" loading="lazy"
-           src="{{ Vite::asset('resources/img/stand.jpg') }}" alt="{{config('app.name')}} stand at homemakers expo">
+           src="{{ asset('img/stand.jpg') }}" alt="{{config('app.name')}} stand at homemakers expo">
     </figure>
 
     <article class="w-full md:w-2/3 p-4 md:p-6 lg:p-8 rounded-md bg-white shadow space-y-4">
@@ -90,19 +90,19 @@
     </header>
 
     <div class="grid grid-cols-3 gap-4 md:gap-6 lg:gap-8 my-12 gallery">
-      <a href="{{ Vite::asset('resources/img/bakkie.jpg') }}">
+      <a href="{{ asset('img/bakkie.jpg') }}">
         <img class="rounded-md shadow-2xl shadow-primary/30 border border-gray-300"
-             src="{{ Vite::asset('resources/img/bakkie.jpg') }}"
+             src="{{ asset('img/bakkie.jpg') }}"
              alt="{{ config('app.name') }} windows with bakkie in background ">
       </a>
-      <a href="{{ Vite::asset('resources/img/van.jpg') }}">
+      <a href="{{ asset('img/van.jpg') }}">
         <img class="rounded-md  shadow-2xl shadow-primary/30 border border-gray-300"
-             src="{{ Vite::asset('resources/img/van.jpg') }}"
+             src="{{ asset('img/van.jpg') }}"
              alt="{{ config('app.name') }} windows with van in background">
       </a>
-      <a href="{{ Vite::asset('resources/img/trailer.jpg') }}">
+      <a href="{{ asset('img/trailer.jpg') }}">
         <img class="rounded-md shadow-2xl shadow-primary/30 border border-gray-300"
-             src="{{ Vite::asset('resources/img/trailer.jpg') }}"
+             src="{{ asset('img/trailer.jpg') }}"
              alt="{{ config('app.name') }} window with trailer in background">
       </a>
     </div>
@@ -121,7 +121,7 @@
 
   </section>
   <div class="wrapper my-24">
-    <img src="{{ Vite::asset('resources/img/bars.png')}}" alt="Bars Specs">
+    <img src="{{ asset('img/bars.png')}}" alt="Bars Specs">
   </div>
 
 </x-layout-app>
