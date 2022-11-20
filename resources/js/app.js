@@ -1,22 +1,21 @@
 import "./bootstrap"
-import SimpleLightboxEsm from "simplelightbox"
-import Swup from "swup"
-import SwupScrollPlugin from "@swup/scroll-plugin"
-import SwupA11yPlugin from "@swup/a11y-plugin"
+import SimpleLightboxEsm from "simplelightbox/dist/simple-lightbox.esm"
+import "simplelightbox/dist/simple-lightbox.css"
+// import Swup from "swup"
+// import SwupScrollPlugin from "@swup/scroll-plugin"
+// import SwupA11yPlugin from "@swup/a11y-plugin"
 
 import "vanilla-headless"
 
 import.meta.glob(["../img/**"])
 // import "./form-validarion"
 
-import "simplelightbox/dist/simple-lightbox.css"
-
-const swap = new Swup({
-  cache: true,
-  animateHistoryBrowsing: true,
-  animationSelector: '[class*="transition-"]',
-  plugins: [new SwupScrollPlugin(), new SwupA11yPlugin()],
-})
+// const swap = new Swup({
+//   cache: true,
+//   animateHistoryBrowsing: true,
+//   animationSelector: '[class*="transition-"]',
+//   plugins: [new SwupScrollPlugin(), new SwupA11yPlugin()],
+// })
 
 function init() {
   new SimpleLightboxEsm(".gallery a", {
@@ -29,4 +28,4 @@ function init() {
 
 init()
 
-swap.on("contentReplaced", init)
+// swap.on("contentReplaced", init)
