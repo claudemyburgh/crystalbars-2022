@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+    /*
+   These are the styles from DaisyUI needed
+   for the scroll bar colours
+  */
+  :root {
+    /* Default is Dark */
+    --primary: theme('colors.gray.100');
+    --secondary: theme('colors.primary.400');
+  }
+
+  *::selection {
+    background: var(--secondary);
+    color: var(--primary)
+  }
+
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 0;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 5px;
+    border: 2px solid var(--primary);
+  }
+}
+
+@layer components {
+
+  @keyframes borderPulse{
+    0%, 100% {
+        box-shadow: inset var(--secondary) 0 0 0 0;
+    }
+    50% {
+        box-shadow: inset var(--primary) 0 0 5px 5px;
+    }
+  }
+
+
+  .transition-swup #main{
+    opacity: 1;
+    transition-duration: 250ms;
+    transform: translateY(0);
+  }
+
+  html.is-animating .transition-swup #main{
+    opacity: 0;
+    transition-duration: 250ms;
+    transform: translateY(30px);
+  }
+
+  html.is-leaving .transition-swup #main{
+    opacity: 0;
+    transition-duration: 250ms;
+    transform: translateY(30px);
+  }
+
+
+  @media (prefers-reduced-motion) {
+
+    @keyframes borderPulse{
+      0%, 100% {
+        box-shadow: inset var(--secondary) 0 0 0 0;
+      }
+      50% {
+        box-shadow: inset var(--primary) 0 0 8px 8px;
+      }
+    }
+
+
+
+    .transition-swup #main{
+      opacity: 1;
+      transition-duration: 0ms;
+      transform: translateY(0);
+    }
+
+    html.is-animating .transition-swup #main{
+      opacity: 0;
+      transform: translateY(0);
+    }
+
+    html.is-leaving .transition-swup #main{
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
+
+
+  .wrapper {
+    @apply max-w-7xl w-full mx-auto px-2 sm:px-6 lg:px-8;
+  }
+
+  @keyframes finger {
+    0%,100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+  }
+
+  .point {
+    animation: finger 1s infinite ease-in-out;
+  }
+
+  .heading {
+    @apply text-4xl md:text-5xl lg:text-7xl font-black tracking-tight;
+  }
+  .heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-black tracking-tight;
+  }
+
+  .swup-progress-bar {
+    height: 3px;
+    background-color: theme('colors.amber.700');
+    z-index: 100;
+  }
+
+  .sl-image {
+    @apply rounded-md shadow-2xl overflow-hidden shadow-primary;
+  }
+
+  .sl-wrapper {
+    @apply bg-white/10 backdrop-blur ;
+  }
+
+
+}
