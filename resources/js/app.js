@@ -1,40 +1,40 @@
-import "./bootstrap"
+// import "./bootstrap"
 import "vanilla-headless"
 import SimpleLightboxEsm from "simplelightbox/dist/simple-lightbox.esm"
 import "simplelightbox/dist/simple-lightbox.css"
 import barba from "@barba/core"
 // import { gsap } from "gsap";
 // import barbaCss from '@barba/css';
-import barbaRouter from "@barba/router"
+// import barbaRouter from "@barba/router"
+//
+// const myRoutes = [
+//   {
+//     path: "/",
+//     name: "home",
+//   },
+//   {
+//     path: "/faq",
+//     name: "faq",
+//   },
+//   {
+//     path: "/products",
+//     name: "products",
+//   },
+//   {
+//     path: "/gallery",
+//     name: "gallery",
+//   },
+//   {
+//     path: "/quote",
+//     name: "quote",
+//   },
+// ]
+//
+// barba.use(barbaRouter, {
+//   routes: myRoutes
+// });
 
-const myRoutes = [
-  {
-    path: "/",
-    name: "home",
-  },
-  {
-    path: "/faq",
-    name: "faq",
-  },
-  {
-    path: "/products",
-    name: "products",
-  },
-  {
-    path: "/gallery",
-    name: "gallery",
-  },
-  {
-    path: "/quote",
-    name: "quote",
-  },
-]
-
-barba.use(barbaRouter, {
-  routes: myRoutes
-});
-
-barba.init({
+// barba.init({
     // transitions: [{
     //   name: 'opacity-transition',
     //   leave(data) {
@@ -50,7 +50,7 @@ barba.init({
     //     });
     //   }
     // }]
-});
+// });
 
 function init() {
   new SimpleLightboxEsm(".gallery a", {
