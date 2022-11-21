@@ -48,7 +48,7 @@
     </script>
 </amp-analytics>
 
-<div id="swup" data-barba="container">
+<div data-barba="container">
     <a href="#main" class="sr-only">Skip to main</a>
     @include('partials._navigation')
     <main id="main">
@@ -58,7 +58,7 @@
     @include('partials._profile')
     @include('partials._footer')
     <button
-        class="fixed bottom-5 h-12 w-12 border border-gray-500 items-center justify-center rounded shadow-lg shadow-primary/50 right-5 bg-white text-gray-500 flex"
+        class="fixed Z-50 bottom-5 h-12 w-12 border border-gray-500 items-center justify-center rounded shadow-lg shadow-primary/50 right-5 bg-white text-gray-500 flex"
         type="button" is="headless-scrolltop">
         <span class="sr-only">Scroll to top</span>
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

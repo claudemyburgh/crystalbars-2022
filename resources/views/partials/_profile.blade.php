@@ -1,5 +1,5 @@
 
-<div class="w-full relative overflow-hidden bg-gradient-to-r from-primary-500 to-primary-600 block py-40">
+<div class="w-full relative overflow-hidden bg-gradient-to-r from-primary-500 to-primary-600 block py-40 z-0">
 
 	<div class="wrapper relative z-10 flex flex-col items-center  justify-center">
 
