@@ -54,22 +54,22 @@
   }
 
 
-  .transition-swup #main{
+  .transition-swup{
     opacity: 1;
+    transition-duration: 1250ms;
     transform: translateY(0);
   }
 
   .transition-duration {
-    transition: 250ms;
   }
 
-  html.is-animating .transition-swup #main{
+  html.is-animating .transition-swup{
     opacity: 0;
 
     transform: translateY(30px);
   }
 
-  html.is-leaving .transition-swup #main{
+  html.is-leaving .transition-swup{
     opacity: 0;
 
     transform: translateY(30px);
@@ -89,17 +89,18 @@
 
 
 
-    .transition-swup #main{
+    .transition-swup{
       opacity: 1;
+      transition: 0.75s;
       transform: translateY(0);
     }
 
-    html.is-animating .transition-swup #main{
+    html.is-animating .transition-swup{
       opacity: 0;
       transform: translateY(0);
     }
 
-    html.is-leaving .transition-swup #main{
+    html.is-leaving .transition-swup{
       opacity: 0;
       transform: translateY(0);
     }
@@ -130,11 +131,6 @@
     @apply text-3xl md:text-4xl lg:text-5xl font-black tracking-tight;
   }
 
-  .swup-progress-bar {
-    height: 3px;
-    background-color: theme('colors.amber.700');
-    z-index: 100;
-  }
 
   .sl-image {
     @apply rounded-md shadow-2xl overflow-hidden shadow-primary;
@@ -144,5 +140,19 @@
     @apply bg-white/10 backdrop-blur ;
   }
 
+  .barba-leave-active,
+  .barba-enter-active {
+    transition: opacity 250ms ease;
+  }
+
+  .barba-leave,
+  .barba-enter-to {
+    opacity: 1;
+  }
+
+  .barba-enter,
+  .barba-leave-to {
+    opacity: 0;
+  }
 
 }

@@ -89,7 +89,7 @@
       <h2 class="heading-2 text-center">Have a look at some work we have done.</h2>
     </header>
 
-    <div class="grid grid-cols-3 gap-4 md:gap-6 lg:gap-8 my-12 gallery">
+    <div class="grid grid-cols-3 gap-4 md:gap-6 lg:gap-8 my-12 gallery" data-barba-prevent="all">
       <a href="{{ asset('img/bakkie.jpg') }}">
         <img class="rounded-md shadow-2xl shadow-primary/30 border border-gray-300"
              src="{{ asset('img/bakkie.jpg') }}"

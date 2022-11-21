@@ -3,7 +3,7 @@
   <div class="wrapper py-40">
     <h1 class="heading-2 mb-10">Some of our work</h1>
 
-    <div class="gallery grid grid-cols-12 gap-4">
+    <div class="gallery grid grid-cols-12 gap-4" data-barba-prevent="all">
 
       @foreach($images as $img)
         <a class="col-span-6 md:col-span-3 overflow-hidden shadow-2xl rounded-md" href=" {{ asset('img/examples/' . $img) }}" >

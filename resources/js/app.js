@@ -1,20 +1,56 @@
 import "./bootstrap"
+import "vanilla-headless"
 import SimpleLightboxEsm from "simplelightbox/dist/simple-lightbox.esm"
 import "simplelightbox/dist/simple-lightbox.css"
-// import Swup from "swup"
-// import SwupScrollPlugin from "@swup/scroll-plugin"
-// import SwupA11yPlugin from "@swup/a11y-plugin"
+import barba from "@barba/core"
+// import { gsap } from "gsap";
+// import barbaCss from '@barba/css';
+import barbaRouter from "@barba/router"
 
-import "vanilla-headless"
+const myRoutes = [
+  {
+    path: "/",
+    name: "home",
+  },
+  {
+    path: "/faq",
+    name: "faq",
+  },
+  {
+    path: "/products",
+    name: "products",
+  },
+  {
+    path: "/gallery",
+    name: "gallery",
+  },
+  {
+    path: "/quote",
+    name: "quote",
+  },
+]
 
-// import "./form-validarion"
-//
-// const swap = new Swup({
-//   cache: true,
-//   animateHistoryBrowsing: true,
-//   animationSelector: '[class*="transition-"]',
-//   plugins: [new SwupScrollPlugin(), new SwupA11yPlugin()],
-// })
+barba.use(barbaRouter, {
+  routes: myRoutes
+});
+
+barba.init({
+  // transitions: [{
+  //   name: 'opacity-transition',
+  //   leave(data) {
+  //     return gsap.to(data.current.container, {
+  //       opacity: 0,
+  //       duration: 0.15
+  //     });
+  //   },
+  //   enter(data) {
+  //     return gsap.from(data.next.container, {
+  //       opacity: 0,
+  //       duration: 0.15
+  //     });
+  //   }
+  // }]
+});
 
 function init() {
   new SimpleLightboxEsm(".gallery a", {
@@ -26,5 +62,3 @@ function init() {
 }
 
 init()
-
-// swap.on("contentReplaced", init)
