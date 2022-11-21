@@ -3,7 +3,7 @@ import "vanilla-headless"
 import SimpleLightboxEsm from "simplelightbox/dist/simple-lightbox.esm"
 import "simplelightbox/dist/simple-lightbox.css"
 import barba from "@barba/core"
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 // import barbaCss from '@barba/css';
 import barbaRouter from "@barba/router"
 
@@ -35,21 +35,21 @@ barba.use(barbaRouter, {
 });
 
 barba.init({
-  transitions: [{
-    name: 'opacity-transition',
-    leave(data) {
-      return gsap.to(data.current.container, {
-        opacity: 0,
-        duration: 0.15
-      });
-    },
-    enter(data) {
-      return gsap.from(data.next.container, {
-        opacity: 0,
-        duration: 0.15
-      });
-    }
-  }]
+    // transitions: [{
+    //   name: 'opacity-transition',
+    //   leave(data) {
+    //     return gsap.to(data.current.container, {
+    //       opacity: 0,
+    //       duration: 0.15
+    //     });
+    //   },
+    //   enter(data) {
+    //     return gsap.from(data.next.container, {
+    //       opacity: 0,
+    //       duration: 0.15
+    //     });
+    //   }
+    // }]
 });
 
 function init() {
