@@ -32,7 +32,7 @@
 <headless-navigation role="navigation" class="bg-white block group drop-shadow relative z-0">
   <div class="wrapper">
     <div class="relative flex items-center h-16">
-      <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+      <div class="absolute inset-y-0 right-0 flex items-center min-[900px]:hidden">
         <!-- Mobile menu button-->
         <button type="button"
                 class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -233,7 +233,7 @@
           </a>
         </div>
 
-        <div class="hidden sm:block float-right">
+        <div class="hidden min-[900px]:block float-right">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
@@ -268,7 +268,7 @@
   </div>
 
   <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="sm:hidden" id="mobile-menu">
+  <div class="min-[900px]:hidden" id="mobile-menu">
     <div class="px-2 pt-2 pb-3 space-y-1">
 
 

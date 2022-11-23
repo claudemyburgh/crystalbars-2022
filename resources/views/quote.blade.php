@@ -55,7 +55,7 @@
                 <form id="form" class="flex flex-wrap" method="POST" action="{{ route('quote.send') }}">
                     @csrf
                     @method('POST')
-                    <div class="p-2 w-1/2">
+                    <div class="p-2 w-full md:w-1/2">
                         <div class="relative">
                             <label for="name" class="leading-7 text-sm text-gray-600 font-semibold">Name</label>
                             <input type="text" id="name" name="name" value="{{old('name')}}" class="w-full bg-gray-100 bg-opacity-50
@@ -75,7 +75,7 @@
                         </div>
                     </div>
 
-                    <div class="p-2 w-1/2">
+                    <div class="p-2 w-full md:w-1/2">
                         <div class="relative">
                             <label for="email" class="leading-7 text-sm text-gray-600 font-semibold">Email</label>
                             <input type="email" id="email" name="email"

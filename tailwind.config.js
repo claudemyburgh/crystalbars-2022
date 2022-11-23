@@ -1,15 +1,6 @@
 /** @type {import("tailwindcss").Config} */
 module.exports = {
-  safelist: [
-    ".barba-leave-active",
-    ".barba-enter-active",
-    ".barba-leave",
-    ".barba-enter-to",
-    ".barba-enter",
-    ".barba-leave-to",
-    ".sl-image",
-    ".sl-wrapper"
-  ],
+  safelist: [".barba-leave-active", ".barba-enter-active", ".barba-leave", ".barba-enter-to", ".barba-enter", ".barba-leave-to", ".sl-image", ".sl-wrapper"],
   content: ["./resources/**/*.blade.php", "./resources/**/*.js", "./resources/**/*.vue"],
   theme: {
     fontFamily: {
