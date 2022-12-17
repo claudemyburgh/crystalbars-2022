@@ -9,4 +9,3 @@ window.axios.defaults.headers.common = {
 };
 
 
-console.log(axios.defaults.headers)

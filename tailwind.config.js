@@ -1,12 +1,13 @@
+const colors = require("tailwindcss/colors")
+
 /** @type {import("tailwindcss").Config} */
 module.exports = {
-  safelist: [".barba-leave-active", ".barba-enter-active", ".barba-leave", ".barba-enter-to", ".barba-enter", ".barba-leave-to", ".sl-image", ".sl-wrapper"],
+  safelist: [".fslightbox-container", ".fslightbox-toolbar-button", ".fslightbox-svg-path", ".fslightbox-slide-number-container", ".fslightbox-slash"],
   content: ["./resources/**/*.blade.php", "./resources/**/*.{js,jsx}", "./resources/**/*.vue"],
   theme: {
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
-    },
-    extend: {
+    }, extend: {
       colors: {
         primary: {
           DEFAULT: "#1B85B6",
@@ -21,8 +22,7 @@ module.exports = {
           800: "#051A23",
           900: "#000000",
         },
-      },
-      dropShadow: {
+      }, dropShadow: {
         dark: "0 5px 5px rgba(0, 0, 0, 0.5)",
       },
     },

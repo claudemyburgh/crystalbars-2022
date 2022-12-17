@@ -7,6 +7,8 @@ const QuoteForm = () => {
 
   const [success, setSuccess] = useState(false)
 
+  const [username, setUsername] = useState('')
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -28,10 +30,12 @@ const QuoteForm = () => {
     e.preventDefault()
     setErrors({})
     setLoading(true)
+    setUsername(form.name)
+
     try {
       await axios.post('/api/send', {...form})
       await setSuccess(true)
-      await setForm({
+      setForm({
         name: "",
         email: "",
         phone: "",
@@ -54,9 +58,6 @@ const QuoteForm = () => {
 
   return (
     <div className={`lg:w-1/2 md:w-2/3 mx-auto`}>
-      {/*<pre>{JSON.stringify(errors, null, 2)}</pre>*/}
-      {/*<pre>{JSON.stringify(form, null, 2)}</pre>*/}
-
       {success && (
         <div
           className="relative p-5 mb-4 mx-2 border border-green-500 bg-green-50 bg-green-500 rounded-md text-white shadow-lg shadow-green-500/30">
@@ -67,7 +68,7 @@ const QuoteForm = () => {
             </svg>
           </button>
 
-          Hi, <span className={`font-semibold`}>{form.name}</span>. <br/>
+          Hi, <span className={`font-semibold`}>{username}</span>. <br/>
           We have received your email and will come back to you as soon as possible.
         </div>
       )}
@@ -140,8 +141,6 @@ const QuoteForm = () => {
                 </path>
               </svg>)
             }
-
-
           </button>
         </div>
       </div>

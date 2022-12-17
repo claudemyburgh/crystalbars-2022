@@ -3,10 +3,10 @@
 @tailwind components;
 
 @layer base {
-    /*
-   These are the styles from DaisyUI needed
-   for the scroll bar colours
-  */
+  /*
+ These are the styles from DaisyUI needed
+ for the scroll bar colours
+*/
   :root {
     /* Default is Dark */
     --primary: theme('colors.gray.100');
@@ -40,45 +40,74 @@
     border-radius: 5px;
     border: 2px solid var(--primary);
   }
+
+  .fslightbox-container {
+    background: rgba(255,255,255,0.85) !important;
+    @apply backdrop-blur;
+  }
+
+  .fslightbox-toolbar-button,
+  .fslightbox-slide-btn
+  {
+    border: solid 1px var(--secondary);
+    background: rgba(255,255,255,0.85) !important;
+    @apply shadow-lg shadow-primary/20;
+  }
+
+  .fslightbox-svg-path {
+    @apply fill-primary-500 #{!important};
+  }
+
+  .fslightbox-slide-number-container
+  {
+    @apply text-primary #{!important};
+  }
+
+  .fslightbox-slash {
+    @apply bg-primary #{!important};
+  }
+
+  img {
+    @apply rounded-xl shadow-2xl shadow-primary-500/50 #{!important};
+  }
+
+
 }
 
 @layer components {
 
-  @keyframes borderPulse{
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      scale: 3;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  #main {
+    /*opacity: 0;*/
+    /*transform-origin: top center;*/
+    /*animation: fade-in 200ms ease-in forwards 200ms;*/
+  }
+
+
+  @keyframes borderPulse {
     0%, 100% {
-        box-shadow: inset var(--secondary) 0 0 0 0;
+      box-shadow: inset var(--secondary) 0 0 0 0;
     }
     50% {
-        box-shadow: inset var(--primary) 0 0 5px 5px;
+      box-shadow: inset var(--primary) 0 0 5px 5px;
     }
   }
 
-
-  .transition-swup{
-    opacity: 1;
-    transition-duration: 1250ms;
-    transform: translateY(0);
-  }
-
-  .transition-duration {
-  }
-
-  html.is-animating .transition-swup{
-    opacity: 0;
-
-    transform: translateY(30px);
-  }
-
-  html.is-leaving .transition-swup{
-    opacity: 0;
-
-    transform: translateY(30px);
-  }
 
 
   @media (prefers-reduced-motion) {
 
-    @keyframes borderPulse{
+    @keyframes borderPulse {
       0%, 100% {
         box-shadow: inset var(--secondary) 0 0 0 0;
       }
@@ -87,23 +116,6 @@
       }
     }
 
-
-
-    .transition-swup{
-      opacity: 1;
-      transition: 0.75s;
-      transform: translateY(0);
-    }
-
-    html.is-animating .transition-swup{
-      opacity: 0;
-      transform: translateY(0);
-    }
-
-    html.is-leaving .transition-swup{
-      opacity: 0;
-      transform: translateY(0);
-    }
   }
 
 
@@ -112,7 +124,7 @@
   }
 
   @keyframes finger {
-    0%,100% {
+    0%, 100% {
       transform: translateX(0);
     }
     50% {
@@ -127,32 +139,10 @@
   .heading {
     @apply text-4xl md:text-5xl lg:text-7xl font-black tracking-tight;
   }
+
   .heading-2 {
     @apply text-3xl md:text-4xl lg:text-5xl font-black tracking-tight;
   }
 
-
-  .sl-image {
-    @apply rounded-md shadow-2xl overflow-hidden shadow-primary;
-  }
-
-  .sl-wrapper {
-    @apply bg-white/10 backdrop-blur ;
-  }
-
-  .barba-leave-active,
-  .barba-enter-active {
-    transition: opacity 250ms ease;
-  }
-
-  .barba-leave,
-  .barba-enter-to {
-    opacity: 1;
-  }
-
-  .barba-enter,
-  .barba-leave-to {
-    opacity: 0;
-  }
 
 }

@@ -1,11 +1,4 @@
 /*!
-	By André Rinas, www.andrerinas.de
-	Documentation, www.simplelightbox.de
-	Available for use under the MIT License
-	Version 2.11.0
-*/
-
-/*!
  * The buffer module from node.js, for the browser.
  *
  * @author   Feross Aboukhadijeh <http://feross.org>
