@@ -1,7 +1,7 @@
-  <div class="w-full flex items-center h-screen relative overflow-hidden z-0">
+  <div class="w-full  flex items-center h-screen relative overflow-hidden z-0 shadow-2xl shadow-primary-500/40">
     <div class="wrapper relative z-10 p-12">
       <h1 class="heading mt-16 mb-4 text-gray-50 drop-shadow-dark  md:max-w-4xl">
-        SECURE YOUR HOME AND BUSINESS WITH THE BEST <span class="text-primary-100">TRANSPARENT</span> BURGLAR BARS OUT THERE
+        SECURE YOUR HOME AND BUSINESS WITH THE BEST <span class=" text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sky-500">TRANSPARENT</span> BURGLAR BARS OUT THERE
       </h1>
 
       <div class="block">

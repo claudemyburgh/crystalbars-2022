@@ -1,8 +1,6 @@
 <x-layout-app>
   @section('title', 'Transparent burglar bars in Cape Town')
 
-  @include('partials._hero')
-
   <section class="wrapper my-24 flex items-center flex-wrap md:flex-row-reverse">
     <figure
       class="overflow-hidden rounded-md shadow-2xl shadow-primary/50 mb-6 h-60 md:h-auto relative z-20 w-full md:w-1/3 ">
@@ -89,25 +87,24 @@
       <h2 class="heading-2 text-center">Have a look at some work we have done.</h2>
     </header>
 
-    <div class="grid grid-cols-3 gap-4 md:gap-6 lg:gap-8 my-12 gallery" data-barba-prevent="all">
-      <a href="{{ asset('img/bakkie.jpg') }}">
-        <img class="rounded-md shadow-2xl shadow-primary/30 border border-gray-300"
+    <div class="grid grid-cols-3 gap-4 md:gap-6 lg:gap-8 my-12 gallery" >
+      <a href="{{ asset('img/bakkie.jpg') }}" data-fslightbox="gallery-sm">
+        <img loading="lazy" class="rounded-md shadow-2xl shadow-primary/30 border border-gray-300"
              src="{{ asset('img/bakkie.jpg') }}"
              alt="{{ config('app.name') }} windows with bakkie in background ">
       </a>
-      <a href="{{ asset('img/van.jpg') }}">
-        <img class="rounded-md  shadow-2xl shadow-primary/30 border border-gray-300"
+      <a href="{{ asset('img/van.jpg') }}" data-fslightbox="gallery-sm">
+        <img loading="lazy" class="rounded-md  shadow-2xl shadow-primary/30 border border-gray-300"
              src="{{ asset('img/van.jpg') }}"
              alt="{{ config('app.name') }} windows with van in background">
       </a>
-      <a href="{{ asset('img/trailer.jpg') }}">
-        <img class="rounded-md shadow-2xl shadow-primary/30 border border-gray-300"
+      <a href="{{ asset('img/trailer.jpg') }}" data-fslightbox="gallery-sm">
+        <img loading="lazy" class="rounded-md shadow-2xl shadow-primary/30 border border-gray-300"
              src="{{ asset('img/trailer.jpg') }}"
              alt="{{ config('app.name') }} window with trailer in background">
       </a>
     </div>
     <div class="text-center">
-
       <a href="https://www.facebook.com/www.crystalbars.co.za" target="_blank"
          class="inline-flex items-center divide-x px-6 py-2 border border-primary text-base font-medium rounded-md shadow-sm text-white  tracking-wider focus:outline-none hover:bg-primary-400 bg-primary focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
         <span class="pr-2 inline-block font-semibold">VIEW MORE ON FACE BOOK</span>

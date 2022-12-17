@@ -6,7 +6,7 @@
             @foreach($images as $img)
                 <a data-fslightbox="gallery" class="col-span-6 md:col-span-3 overflow-hidden shadow-2xl rounded-md"
                    href=" {{ asset('img/examples/' . $img) }}">
-                    <img class="min-h-full min-w-full object-cover" src=" {{ asset('img/examples/' . $img) }}"
+                    <img loading="lazy" class="min-h-full min-w-full object-cover" src=" {{ asset('img/examples/' . $img) }}"
                          alt="images gallery ">
                 </a>
             @endforeach

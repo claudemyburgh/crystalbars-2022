@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +42,7 @@
     </script>
 
 </head>
-<body class="antialiased bg-gray-100 text-gray-700 text-light overflow-x-hidden" data-barba="wrapper">
+<body class="antialiased bg-gray-100 text-gray-700 text-light overflow-x-hidden" >
 <!-- Global site tag (gtag) - Google Ads: 964038674 -->
 <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
@@ -50,11 +50,18 @@
     </script>
 </amp-analytics>
 
-<div data-barba="container">
+<div>
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-50 top-5 left-5 inline-block focus:px-4 focus:py-2 focus:shadow-lg rounded-md border border-primary-500 bg-primary-50">Skip to main</a>
     @include('partials._navigation')
 
-    <main id="main">
+    @if(request()->is('/'))
+        @include('partials._hero')
+    @endif
+
+
+
+
+    <main id="main" class="my-24">
         {{ $slot }}
     </main>
 

@@ -79,7 +79,7 @@
   @keyframes fade-in {
     0% {
       opacity: 0;
-      scale: 3;
+      scale: 1.5;
     }
     100% {
       opacity: 1;
@@ -87,10 +87,14 @@
     }
   }
 
-  #main {
-    /*opacity: 0;*/
-    /*transform-origin: top center;*/
-    /*animation: fade-in 200ms ease-in forwards 200ms;*/
+
+  @keyframes finger {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
   }
 
 
@@ -104,32 +108,49 @@
   }
 
 
-
   @media (prefers-reduced-motion) {
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
     @keyframes borderPulse {
       0%, 100% {
         box-shadow: inset var(--secondary) 0 0 0 0;
       }
       50% {
-        box-shadow: inset var(--primary) 0 0 8px 8px;
+        box-shadow: inset var(--primary) 0 0 2px 2px;
+      }
+    }
+
+
+    @keyframes finger {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(10px);
       }
     }
 
   }
 
 
-  .wrapper {
-    @apply max-w-7xl w-full mx-auto px-2 sm:px-6 lg:px-8;
+
+  #main {
+    opacity: 0;
+    transform-origin: top center;
+    animation: fade-in 200ms ease-in forwards 200ms;
   }
 
-  @keyframes finger {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(50px);
-    }
+
+  .wrapper {
+    @apply max-w-7xl w-full mx-auto px-2 sm:px-6 lg:px-8;
   }
 
   .point {

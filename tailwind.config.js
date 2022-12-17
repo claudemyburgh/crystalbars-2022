@@ -22,9 +22,14 @@ module.exports = {
           800: "#051A23",
           900: "#000000",
         },
-      }, dropShadow: {
-        dark: "0 5px 5px rgba(0, 0, 0, 0.5)",
       },
+      dropShadow: ({theme}) => (
+        {
+
+          dark: `0 2px 2px ${theme("colors.primary.700")} `,
+
+        }
+      )
     },
   },
   plugins: [require("tailwindcss-attributes")],
