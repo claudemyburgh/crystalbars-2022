@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{{--<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">--}}
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,8 +26,10 @@
 
     <script src="{{ mix('js/app.js') }}" defer></script>
 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75033958-1"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -49,8 +51,9 @@
 </amp-analytics>
 
 <div data-barba="container">
-    <a href="#main" class="sr-only">Skip to main</a>
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-50 top-5 left-5 inline-block focus:px-4 focus:py-2 focus:shadow-lg rounded-md border border-primary-500 bg-primary-50">Skip to main</a>
     @include('partials._navigation')
+
     <main id="main">
         {{ $slot }}
     </main>

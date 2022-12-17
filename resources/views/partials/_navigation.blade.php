@@ -1,4 +1,4 @@
-<div class="fixed top-0 inset-x-0 z-50">
+<div class="fixed top-0 inset-x-0 z-40">
 <div class="full bg-gradient-to-r from-primary-400/75 to-primary-600/75 backdrop-blur text-white">
   <div class="wrapper py-1 font-light">
     <ul class="flex justify-end text-white space-x-2 relative z-10 font-semibold">
