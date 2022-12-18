@@ -25,9 +25,7 @@ module.exports = {
       },
       dropShadow: ({theme}) => (
         {
-
           dark: `0 2px 2px ${theme("colors.primary.700")} `,
-
         }
       )
     },
