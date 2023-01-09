@@ -1,11 +1,16 @@
   <div class="w-full  flex items-center h-screen relative overflow-hidden z-0 shadow-2xl shadow-primary-500/40">
-    <div class="wrapper relative z-10 p-12">
-      <h1 class="heading mt-16 mb-4 text-gray-50 drop-shadow-dark  md:max-w-4xl">
-        SECURE YOUR HOME AND BUSINESS WITH THE BEST <span class=" text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sky-500">TRANSPARENT</span> BURGLAR BARS OUT THERE
+    <div class="wrapper relative z-10 p-12 text-center">
+      <h1 class="heading mt-16 mb-4 text-white drop-shadow-dark mx-auto md:max-w-5xl hero-title">
+          Experience the Best in Home Security with <span class="relative"><strong class="relative z-10">Transparent</strong> <span class="absolute inset-4 bg-orange-500 z-0 -rotate-3 -skew-x-12 rounded-md"></span> </span>
+          <span class="relative">
+              <strong class="relative z-10">Polycarbonate</strong>
+              <span class="absolute inset-4 skew-x-12 bg-primary-400 z-0 rotate-1 rounded-md"></span>
+          </span>  Burglar Bars
+
       </h1>
 
-      <div class="block">
-      <a href="{{ route('quote') }}" class="inline-flex items-center divide-x px-8 py-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-500 hover:bg-primary-400 drop-shadow-dark tracking-wider focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+      <div class="block my-6">
+      <a href="{{ route('quote') }}" class="inline-flex items-center divide-x px-8 py-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-400 hover:bg-primary-500 drop-shadow-dark tracking-wider focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
         <span class="pr-2 inline-block font-semibold">GET FREE QUOTE</span>
         <span class="pl-2 inline-block">
           <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
@@ -14,14 +19,11 @@
         </svg>
         </span>
       </a>
-        <span class="text-7xl relative top-5 drop-shadow-dark point inline-block">
-          👈
-        </span>
       </div>
 
 
     </div>
-    <video class="absolute inset-0 min-h-full object-fill" preload="auto" autoplay loop muted  poster="{{ asset('img/file.jpg')  }}" >
+    <video class="absolute inset-0 min-h-full object-fill"  preload="auto" autoplay loop muted  poster="{{ asset('img/file.jpg')  }}" >
       <source src="{{ asset('videos/file.mp4') }}" type="video/mp4">
     </video>
 

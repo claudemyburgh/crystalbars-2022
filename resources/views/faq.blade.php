@@ -1,8 +1,13 @@
 <x-layout-app>
   @section('title', 'FAQ Section')
 
-  <div class="max-w-3xl mx-auto px-4 py-40">
-    <h1 class="heading-2 mb-10">Here are some of the frequently asked questions.</h1>
+  <div class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="heading-2 mb-10 text-center"><span class="relative z-10">Here are some of the frequently asked </span><br/> <span class="relative">
+            <strong class="relative z-10 text-white hero-title">
+                questions.
+            </strong>
+            <span aria-hidden="true" class="absolute -skew-x-6 -inset-4 bg-primary-200 z-0 -rotate-2 rounded-md"></span>
+        </span></h1>
 
     <ul class=" space-y-5">
       <li class="p-4 md:p-6 lg:p-8 rounded-md bg-white rounded shadow bg-white divide-y divide-gray-200 divide-solid space-y-4">

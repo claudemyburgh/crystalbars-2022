@@ -1,26 +1,37 @@
 <div class="fixed top-0 inset-x-0 z-40">
 <div class="full bg-gradient-to-r from-primary-400/75 to-primary-600/75 backdrop-blur text-white">
-  <div class="wrapper py-1 font-light">
-    <ul class="flex justify-end text-white space-x-2 relative z-10 font-semibold">
+  <div class="wrapper py-1.5 font-light">
+    <ul class="flex justify-end text-white text-xs md:text-sm space-x-2 md:space-x-4 relative z-10 font-semibold">
       <li>
-        <a class="flex items-center space-x-0.5 hover:underline" href="tel:0727554303">
+        <a class="flex items-center space-x-0.5 hover:underline" href="tel:0794912812">
           <span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
               <path d="M8 16.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75z" />
               <path fill-rule="evenodd"
                     d="M4 4a3 3 0 013-3h6a3 3 0 013 3v12a3 3 0 01-3 3H7a3 3 0 01-3-3V4zm4-1.5v.75c0 .414.336.75.75.75h2.5a.75.75 0 00.75-.75V2.5h1A1.5 1.5 0 0114.5 4v12a1.5 1.5 0 01-1.5 1.5H7A1.5 1.5 0 015.5 16V4A1.5 1.5 0 017 2.5h1z"
                     clip-rule="evenodd" />
             </svg>
           </span>
-          <span>072 755 4303</span></a></li>
+          <span>079 491 2812</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center space-x-0.5 hover:underline" href="tel:0727554303">
+          <span aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+<path d="m12 2c-5.5 0-10 4.5-10 10 0 1.8 0.50078 3.5 1.3008 5l-1.3008 5 5.1992-1.1992c1.5 0.8 3.1008 1.1992 4.8008 1.1992 5.5 0 10-4.5 10-10 0-2.7-1.0004-5.1996-2.9004-7.0996s-4.3996-2.9004-7.0996-2.9004zm0 2c2.1 0 4.0992 0.80078 5.6992 2.3008 1.5 1.6 2.3008 3.5992 2.3008 5.6992 0 4.4-3.6 8-8 8-1.3 0-2.7008-0.3-3.8008-1l-0.69922-0.40039-0.69922 0.20117-2 0.5 0.5-1.8008 0.19922-0.80078-0.40039-0.69922c-0.7-1.2-1.0996-2.6-1.0996-4 0-4.4 3.6-8 8-8zm-3.5 3.4004c-0.2 0-0.49922-0.00117-0.69922 0.29883-0.3 0.3-0.90039 0.90156-0.90039 2.1016s0.9 2.3996 1 2.5996c0.2 0.2 1.7988 2.7988 4.2988 3.7988 2.1 0.8 2.5 0.60156 3 0.60156 0.5-0.1 1.5012-0.60117 1.7012-1.2012s0.19883-1.1004 0.29883-1.4004c-0.1-0.1-0.2-0.19883-0.5-0.29883-0.2-0.1-1.3992-0.70078-1.6992-0.80078s-0.39961-0.20039-0.59961 0.09961-0.70078 0.8-0.80078 1-0.2 0.20156-0.5 0.10156c-0.2-0.1-1-0.30117-2-1.2012-0.8-0.6-1.3004-1.3992-1.4004-1.6992-0.2-0.2 0.00156-0.4 0.10156-0.5l0.39844-0.40039c0.1-0.1 0.10117-0.30039 0.20117-0.40039s0.1-0.20039 0-0.40039-0.60078-1.3984-0.80078-1.8984c-0.2-0.4-0.39961-0.40039-0.59961-0.40039z"/>
+            </svg>
+          </span>
+          <span>072 755 4303</span>
+        </a>
+      </li>
       <li>
         <a class="flex items-center space-x-0.5 hover:underline" href="mailto:info@crystalbars.co.za">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
-              <path fill-rule="evenodd"
-                    d="M5.404 14.596A6.5 6.5 0 1116.5 10a1.25 1.25 0 01-2.5 0 4 4 0 10-.571 2.06A2.75 2.75 0 0018 10a8 8 0 10-2.343 5.657.75.75 0 00-1.06-1.06 6.5 6.5 0 01-9.193 0zM10 7.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"
-                    clip-rule="evenodd" />
-            </svg>
+          <span aria-hidden="">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+</svg>
+
           </span>
           <span>info@crystalbars.co.za</span>
         </a>

@@ -3,29 +3,33 @@
 
   <section class="wrapper my-24 flex items-center flex-wrap md:flex-row-reverse">
     <figure
-      class="overflow-hidden rounded-md shadow-2xl shadow-primary/50 mb-6 h-60 md:h-auto relative z-20 w-full md:w-1/3 ">
+      class="overflow-hidden rounded-md shadow-2xl shadow-primary-500/70 lg:scale-125 lg:translate-x-10 mb-6 h-60 md:h-auto relative z-20 w-full md:w-2/5 ">
       <img class="w-full max-w-full" height="732" width="540" loading="lazy"
            src="{{ asset('img/stand.jpg') }}" alt="{{config('app.name')}} stand at homemakers expo">
     </figure>
 
-    <article class="w-full md:w-2/3 p-4 md:p-6 lg:p-8 rounded-md bg-white shadow space-y-4">
+    <article class="w-full md:w-3/5 p-4 md:p-6 lg:p-8 rounded-md bg-white shadow space-y-4 relative z-10">
       <header>
         <h2 class="heading-2">
           See-through burglar bars
         </h2>
       </header>
       <p class="text-lg">
-        For our clear burglar bars, we use A-grade polycarbonate that is imported from Europe. The transparent burglar
-        bar is 6 mm thick and 35 mm wide. The bars are beveled on both sides so that there are no sharp edges that could
-        cut you when opening the windows. They are UV protected to prevent them from discolouring in the direct sun.
+         Are you tired of traditional burglar bars that block your view and ruin the aesthetic of your home? Our transparent polycarbonate burglar bars are the solution you've been looking for.
       </p>
       <p class="text-lg">
-        The burglar bars are transparent so you will have an unobstructed view and have the most stylish clear burglar
-        bars that will never rust and will never require any maintenance. Unfortunately, with all security systems, none
-        of them are 100% intruder proof. Burglar bars are only a deterrent and should keep out your intruder until your
-        security company or police arrive at your house.
+        Made with A-grade polycarbonate imported from Europe, our burglar bars are not only stylish and modern, but also incredibly durable and strong. At 6 mm thick and 35 mm wide, they are able to withstand significant force and protect your home from potential intruders.
       </p>
-      <p class="text-lg">We serve Cape Town area and surroundings.</p>
+      <p class="text-lg">
+          But what sets our burglar bars apart is their transparency. Unlike traditional bars that obstruct your view, our transparent bars allow you to see clearly out of your windows while still providing security. And with UV protection, you won't have to worry about them discoloring in the sun.
+      </p>
+      <p class="text-lg">
+          Installation is quick and easy, and best of all, our burglar bars require no maintenance. They will never rust and will always look as good as new. While no security system is 100% intruder proof, our burglar bars serve as a strong deterrent and can buy you valuable time until help arrives.
+      </p>
+      <p class="text-lg">
+          If you live in the <strong>Cape Town</strong> area or surrounding areas, we would be happy to provide you with the peace of mind that comes with secure and stylish home protection. Contact us today to learn more!
+      </p>
+
     </article>
 
 

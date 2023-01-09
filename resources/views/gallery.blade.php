@@ -1,10 +1,15 @@
 <x-layout-app>
     @section('title', 'Photo Gallery ')
-    <div class="wrapper py-40">
-        <h1 class="heading-2 mb-10">Some of our work</h1>
-        <div id="gallery" class="gallery grid grid-cols-12 gap-4">
+    <div class="wrapper py-12">
+        <h1 class="heading-2 mb-10"><span class="relative z-10">Some of</span>
+            <span class="relative">
+              <strong class="relative z-10 text-white hero-title">our work</strong>
+              <span class="absolute -inset-2 skew-x-12 bg-primary-400 z-0 rotate-1 rounded-md"></span>
+          </span>
+            </h1>
+        <div id="gallery" class="gallery grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8">
             @foreach($images as $img)
-                <a data-fslightbox="gallery" class="col-span-6 md:col-span-3 overflow-hidden shadow-2xl rounded-md"
+                <a data-fslightbox="gallery" class="overflow-hidden transition-all hover:scale-110 hover:shadow-lg hover:shadow-primary-500/50 rounded-md"
                    href=" {{ asset('img/examples/' . $img) }}">
                     <img loading="lazy" class="min-h-full min-w-full object-cover" src=" {{ asset('img/examples/' . $img) }}"
                          alt="images gallery ">

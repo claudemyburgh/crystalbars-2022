@@ -4,8 +4,14 @@
 
     <div class="wrapper my-36">
         <div class="flex flex-col text-center w-full my-12">
-            <h1 class="heading-2">GET YOUR <span
-                    class="font-black text-primary underline italic">FREE</span> QUOTE</h1>
+            <h1 class="heading-2">
+                <span class="relative z-10">GET YOUR</span>
+                <span class="relative">
+                    <strong class="relative z-10  text-white hero-title">FREE</strong>
+                    <span aria-hidden="true" class="absolute -skew-x-6 -inset-4 bg-primary-200 z-0 -rotate-2 rounded-md"></span>
+                </span>
+                <span class="relative z-10">QUOTE</span>
+            </h1>
         </div>
 
         @if(session('status'))
