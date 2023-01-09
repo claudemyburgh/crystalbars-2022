@@ -31,7 +31,7 @@
            src="{{ asset('img/gate.jpg') }}" alt="{{config('app.name')}} install gate">
     </figure>
 
-    <article class="w-full md:w-2/3 p-4 md:p-6 lg:p-8 rounded-md bg-white shadow space-y-4">
+    <article id="trellis" class="w-full md:w-2/3 p-4 md:p-6 lg:p-8 rounded-md bg-white shadow space-y-4">
       <header>
         <h2 class="heading-2">
            Trellis Security Gate
