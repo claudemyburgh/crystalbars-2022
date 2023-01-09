@@ -26,40 +26,41 @@
 
     <script src="{{ mix('js/app.js') }}" defer></script>
 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75033958-1"></script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag("js", new Date());
-        gtag("config", "UA-75033958-1");
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', {{ config('google.tagmanager.code') }});</script>
+    <!-- End Google Tag Manager -->
 
 </head>
-<body class="antialiased bg-gray-100 text-gray-700 text-light overflow-x-hidden" >
-<!-- Global site tag (gtag) - Google Ads: 964038674 -->
-<amp-analytics type="gtag" data-credentials="include">
-    <script type="application/json">
-       { "vars": { "gtag_id": "AW-964038674", "config": { "AW-964038674": { "groups": "default" } } }, "triggers": { } }
-    </script>
-</amp-analytics>
+<body class="antialiased bg-gray-100 text-gray-700 text-light overflow-x-hidden">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id={{ config('google.tagmanager.code') }}"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <div>
-    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-50 top-5 left-5 inline-block focus:px-4 focus:py-2 focus:shadow-lg rounded-md border border-primary-500 bg-primary-50">Skip to main</a>
+    <a href="#main"
+       class="sr-only focus:not-sr-only focus:fixed focus:z-50 top-5 left-5 inline-block focus:px-4 focus:py-2 focus:shadow-lg rounded-md border border-primary-500 bg-primary-50">Skip
+        to main</a>
     @include('partials._navigation')
 
     @if(request()->is('/'))
         @include('partials._hero')
     @endif
-
-
-
 
     <main id="main" class="my-24">
         {{ $slot }}
@@ -74,11 +75,10 @@
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
              stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12" />
+                  d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"/>
         </svg>
     </button>
 
 </div>
-
 </body>
 </html>
