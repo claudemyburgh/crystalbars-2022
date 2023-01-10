@@ -60,8 +60,8 @@
 
         <noscript>
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-                <form  id="form-quote" class="flex flex-wrap" method="POST" action="{{ route('quote.send') }}">
+            <div class="flex flex-wrap ">
+                <form  id="form-quote" class="w-full flex flex-wrap my-6 bg-white shadow shadow-primary-500/20 p-6 rounded-md" method="POST" action="{{ route('quote.send') }}">
                     @csrf
                     @method('POST')
                     <div class="p-2 w-full md:w-1/2">

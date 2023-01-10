@@ -72,8 +72,8 @@ const QuoteForm = () => {
           We have received your email and will come back to you as soon as possible.
         </div>
       )}
-      <div className={`w-full flex flex-wrap`}>
-        <div className={`p-2 w-full md:w-1/2`}>
+      <div className={`w-full flex flex-wrap my-6 bg-white shadow shadow-primary-500/20 p-6 rounded-md`}>
+        <div className={`p-2 w-full md:w-1/2 `}>
           <div className="relative">
             <label htmlFor="name" className={`leading-7 text-sm text-gray-600 font-semibold`}>Name</label>
             <input type="text" id="name"

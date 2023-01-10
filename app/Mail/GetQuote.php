@@ -34,7 +34,7 @@ class GetQuote extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address($this->data->email, $this->data->name),
+            from: new Address($this->data['email'], $this->data['name']),
             subject: 'Get Quote',
         );
     }
