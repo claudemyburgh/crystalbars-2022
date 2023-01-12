@@ -42,7 +42,7 @@
         </h2>
       </header>
       <p class="text-lg">
-          Made with high-quality materials such as aluminum or steel, our trellis gates are built to withstand significant force and protect your home from potential intruders. The unique trellis design not only adds an elegant aesthetic to your property, but also allows for improved visibility and airflow.
+          Made with high-quality materials such as aluminum, our trellis gates are built to withstand significant force and protect your home from potential intruders. The unique trellis design not only adds an elegant aesthetic to your property, but also allows for improved visibility and airflow.
       </p>
       <p class="text-lg">Our trellis security gates are customizable to fit the specific measurements and style of your home. We offer a variety of colors and finishes to match your home's existing design.</p>
       <p class="text-lg">
