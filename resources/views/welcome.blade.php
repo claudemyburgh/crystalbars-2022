@@ -11,7 +11,7 @@
     <article class="w-full md:w-3/5 p-4 md:p-6 lg:p-8 rounded-md bg-white shadow space-y-4 relative z-10">
       <header>
         <h2 class="heading-2">
-          See-through burglar bars
+          Transparent Polycarbonate Burglar Bars: The Perfect Blend of Style and Security
         </h2>
       </header>
       <p class="text-lg">

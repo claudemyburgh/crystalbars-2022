@@ -16,9 +16,13 @@
         </h2>
       </header>
       <p class="text-lg">
-        For our clear burglar bars, we use A-grade polycarbonate that is imported from Europe. The transparent burglar
-        bar is 6 mm thick and 35 mm wide. The bars are beveled on both sides so that there are no sharp edges that could
-        cut you when opening the windows. They are UV protected to prevent them from discolouring in the direct sun.
+          At our company, we take pride in using only the best materials for our products. That's why we use A-grade polycarbonate imported from Europe for our clear burglar bars. We understand that not only the security but also the appearance of the bars is important to our customers.
+      </p>
+      <p class="text-lg">
+          The transparent burglar bars are designed to be both strong and stylish. They are 6 mm thick and 35 mm wide, making them able to withstand significant force and protect your home from potential intruders. To ensure safety, the bars are beveled on both sides with no sharp edges that could cause injury when opening windows.
+      </p>
+      <p class="text-lg">
+          Our clear burglar bars are also designed to withstand the elements. They are UV protected to prevent discoloration and fading due to direct sunlight. This means that they will maintain their clear appearance for years to come, ensuring that the aesthetic of your home is not affected.
       </p>
     </article>
 
@@ -37,12 +41,16 @@
            Trellis Security Gate
         </h2>
       </header>
-{{--      <p class="text-lg">--}}
-{{--        For our clear burglar bars, we use A-grade polycarbonate that is imported from Europe. The transparent burglar--}}
-{{--        bar is 6 mm thick and 35 mm wide. The bars are beveled on both sides so that there are no sharp edges that could--}}
-{{--        cut you when opening the windows. They are UV protected to prevent them from discolouring in the direct sun.--}}
-{{--      </p>--}}
-{{--      <p class="text-lg">We serve Cape Town area and surroundings.</p>--}}
+      <p class="text-lg">
+          Made with high-quality materials such as aluminum or steel, our trellis gates are built to withstand significant force and protect your home from potential intruders. The unique trellis design not only adds an elegant aesthetic to your property, but also allows for improved visibility and airflow.
+      </p>
+      <p class="text-lg">Our trellis security gates are customizable to fit the specific measurements and style of your home. We offer a variety of colors and finishes to match your home's existing design.</p>
+      <p class="text-lg">
+          In addition to their aesthetic appeal, our trellis gates are also low-maintenance and long-lasting. They are resistant to rust, corrosion and fading, so they will always look as good as new.
+      </p>
+      <p class="text-lg">
+          Don't settle for plain and functional security gates. Choose our trellis gates for the perfect combination of style and security.
+      </p>
     </article>
 
   </section>

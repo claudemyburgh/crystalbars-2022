@@ -162,11 +162,11 @@
   }
 
   .heading {
-    @apply text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter;
+    @apply text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter;
   }
 
   .heading-2 {
-    @apply text-3xl md:text-4xl lg:text-5xl font-black tracking-tight;
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight;
   }
 
 
