@@ -56,9 +56,9 @@
             </div>
         @endif
 
-        <div id="form-quote"></div>
+{{--        <div id="form-quote"></div>--}}
 
-        <noscript>
+{{--        <noscript>--}}
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
             <div class="flex flex-wrap ">
                 <form  id="form-quote" class="w-full flex flex-wrap my-6 bg-white shadow shadow-primary-500/20 p-6 rounded-md" method="POST" action="{{ route('quote.send') }}">
@@ -125,7 +125,7 @@
 
             </div>
         </div>
-        </noscript>
+{{--        </noscript>--}}
 
     </div>
 
