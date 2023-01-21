@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\GetQuote;
+use App\Mail\Quote;
 use App\Mail\Thanks;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -26,12 +27,16 @@ class SendQuoteController extends Controller
         ]);
 
 
+//        Mail::to(env('MAIL_FROM_ADDRESS'))
+//            ->send(new GetQuote($request->only('name', 'email', 'phone', 'message')));
+
+
+        Mail::to(env('MAIL_FROM_ADDRESS'))
+            ->send(new Quote());
+
         Mail::to($request->email)
             ->send(new Thanks($request->only('name')));
 
-        Mail::to(env('MAIL_FROM_ADDRESS'))
-            ->send(new GetQuote($request->only('name', 'email', 'phone', 'message')));
-        
 
         return back()->withStatus('QUOTE SEND TO THE CRYSTAL BARS TEAM');
     }

@@ -18,10 +18,9 @@ class Quote extends Mailable
      *
      * @return void
      */
-    public function __construct()
-    {
-        //
-    }
+    public function __construct(
+        public array $data
+    ) {}
 
     /**
      * Get the message envelope.
