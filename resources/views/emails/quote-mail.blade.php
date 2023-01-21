@@ -1,11 +1,18 @@
 <x-mail::message>
-# Introduction
+# Hi, Hendry
 
-The body of your message.
+## {{ $name }} requested a quote from the {{ config('app.name') }} website.
 
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
+### There details
+    Name: {{ $name }}
+    Email: {{ $email }}
+    Phone: {{ $phone }}
+
+___
+
+{!! nl2br($message) !!}
+
+___
 
 Thanks,<br>
 {{ config('app.name') }}
