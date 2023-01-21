@@ -28,10 +28,10 @@ class SendQuoteController extends Controller
         Mail::to($request->only('email'))
             ->queue(new Thanks($data = $request->only('name')));
 
-
-        return $request->json([
-            'success' => 'Email successfully send!'
-        ]);
+//
+//        return $request->json([
+//            'success' => 'Email successfully send!'
+//        ]);
 
     }
 }

@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Mail\GetQuote;
 use App\Mail\Thanks;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use LVR\Phone\Phone;
 
-class SendQuoteController extends Controller
+class SendQuoteController extends Controller implements ShouldQueue
 {
   /**
    * Handle the incoming request.
