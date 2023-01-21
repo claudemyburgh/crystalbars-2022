@@ -28,7 +28,7 @@ class SendQuoteController extends Controller
 
         Mail::to($request->only('email'))
             ->send(new Thanks($data = $request->only('name')));
-        
+
         Mail::to(env('MAIL_FROM_ADDRESS'))
             ->send(new GetQuote($data = $request->only('name', 'email', 'phone', 'message')));
 

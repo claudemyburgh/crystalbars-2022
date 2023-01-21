@@ -14,7 +14,7 @@ class GetQuote extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
-    public $data;
+    public array $data;
 
     /**
      * Create a new message instance.
