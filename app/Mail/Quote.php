@@ -13,14 +13,16 @@ class Quote extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public array $data;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(
-        public array $data
-    ) {}
+    public function __construct($data) {
+        $this->data = $data;
+    }
 
     /**
      * Get the message envelope.
