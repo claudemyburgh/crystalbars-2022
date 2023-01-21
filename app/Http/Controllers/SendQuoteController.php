@@ -32,7 +32,7 @@ class SendQuoteController extends Controller
 
 
         Mail::to(env('MAIL_FROM_ADDRESS'))
-            ->send(new Quote());
+            ->send(new Quote($request->only('name', 'email', 'phone', 'message')));
 
         Mail::to($request->email)
             ->send(new Thanks($request->only('name')));
