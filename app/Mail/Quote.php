@@ -45,6 +45,12 @@ class Quote extends Mailable
     {
         return new Content(
             markdown: 'emails.quote-mail',
+            with: [
+                'name' => $this->data['name'],
+                'email' => $this->data['email'],
+                'phone' => $this->data['phone'],
+                'message' => $this->data['message']
+            ]
         );
     }
 
