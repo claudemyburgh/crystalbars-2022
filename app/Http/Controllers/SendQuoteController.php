@@ -31,6 +31,6 @@ class SendQuoteController extends Controller
         Mail::to($request->only('email'))
             ->queue(new Thanks($data = $request->only('name')));
 
-        return back()->withStatus('QUOTE SEND TO THE CRYSTAL BARS TEAM');
+        return response()->back()->withStatus('QUOTE SEND TO THE CRYSTAL BARS TEAM');
     }
 }
