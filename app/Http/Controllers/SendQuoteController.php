@@ -26,11 +26,12 @@ class SendQuoteController extends Controller
         ]);
 
 
-        Mail::to($request->only('email'))
+        Mail::to($request->email)
             ->send(new Thanks($request->only('name')));
 
         Mail::to(env('MAIL_FROM_ADDRESS'))
             ->send(new GetQuote($request->only('name', 'email', 'phone', 'message')));
+        
 
         return back()->withStatus('QUOTE SEND TO THE CRYSTAL BARS TEAM');
     }
