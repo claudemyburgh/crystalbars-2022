@@ -57,9 +57,9 @@
             </div>
         @endif
 
-        {{--        <div id="form-quote"></div>--}}
+                <div id="form-quote"></div>
 
-        {{--        <noscript>--}}
+    <noscript>
         <div class="mx-auto flex  lg:w-1/2">
             <form id="form-quote"
                   class="min-w-full flex flex-1 flex-wrap my-6 w-1/2 bg-white shadow shadow-primary-500/20 p-6 rounded-md"
@@ -129,7 +129,7 @@
                 </div>
             </form>
         </div>
-        {{--        </noscript>--}}
+    </noscript>
 
     </div>
 

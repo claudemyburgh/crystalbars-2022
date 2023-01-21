@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Mail\GetQuote;
+use App\Mail\Quote;
 use App\Mail\Thanks;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -22,16 +22,14 @@ class SendQuoteController extends Controller
 
 
         Mail::to(env('MAIL_FROM_ADDRESS'))
-            ->queue(new GetQuote($data = $request->only('name', 'email', 'phone', 'message')));
+            ->queue(new Quote($request->only('name', 'email', 'phone', 'message')));
 
+        Mail::to($request->email)
+            ->queue(new Thanks($request->only('name')));
 
-        Mail::to($request->only('email'))
-            ->queue(new Thanks($data = $request->only('name')));
-
-//
-//        return $request->json([
-//            'success' => 'Email successfully send!'
-//        ]);
+        return $request->json([
+            'success' => 'Email successfully send!'
+        ]);
 
     }
 }

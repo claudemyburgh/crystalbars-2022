@@ -7,12 +7,12 @@ import "fslightbox"
 
 new FsLightbox()
 
-//
-// const quoteForm = document.getElementById('form-quote')
-//
-// if (quoteForm) {
-//   createRoot(quoteForm).render(<QuoteForm/>)
-// }
+
+const quoteForm = document.getElementById('form-quote')
+
+if (quoteForm) {
+  createRoot(quoteForm).render(<QuoteForm/>)
+}
 
 
 
