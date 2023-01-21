@@ -1,7 +1,7 @@
 <div class="fixed top-0 inset-x-0 z-40">
 <div class="full bg-gradient-to-r from-primary-400/75 to-primary-600/75 backdrop-blur text-white">
   <div class="wrapper py-1.5 font-light">
-    <ul class="flex justify-end text-white text-xs md:text-sm space-x-2 md:space-x-4 relative z-10 font-semibold">
+    <ul class="flex justify-end text-white text-xxs md:text-sm space-x-2 md:space-x-4 relative z-10 font-semibold">
       <li>
         <a class="flex items-center space-x-0.5 hover:underline" href="tel:0794912812">
           <span>

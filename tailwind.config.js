@@ -27,7 +27,10 @@ module.exports = {
         {
           dark: `0 2px 2px ${theme("colors.primary.700")} `,
         }
-      )
+      ),
+      fontSize: {
+        xxs: '0.55rem'
+      }
     },
   },
   plugins: [require("tailwindcss-attributes")],
