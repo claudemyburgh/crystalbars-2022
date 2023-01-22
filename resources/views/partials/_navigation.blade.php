@@ -249,23 +249,23 @@
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
             <a href="{{route('home')}}"
-               @class(['hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->is('/')])
+               @class(['hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('home')])
               >Home</a>
 
-            <a href="{{ route('gallery') }}"
-               @class(['hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->is('gallery')])>Gallery</a>
-
-            <a href="{{ route('products') }}"
-               @class(['hover:bg-primary-400 relative hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->is('products')])>
+            <a href="{{ route('trellis') }}"
+               @class(['hover:bg-primary-400 relative hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('trellis')])>
                 <span @class(['text-white font-light italic pointer-events-none py-0.5 px-2 rounded-lg bg-amber-600 text-xs absolute -top-2 -right-3'])>New</span>
-                Products</a>
+                Trellis Gates</a>
+
+            <a href="{{ route('gallery') }}"
+               @class(['hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('gallery')])>Gallery</a>
 
             <a href="{{ route('faq') }}"
-               @class(['hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->is('faq')])>FAQ</a>
+               @class(['hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('faq')])>FAQ</a>
 
             <a href="{{ route('quote') }}"
-               @class(['hover:bg-primary-400 border border-gray-300 relative overflow-hidden hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->is('quote')])>
-              @if(!request()->is('quote'))
+               @class(['hover:bg-primary-400 border border-gray-300 relative overflow-hidden hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('quote')])>
+              @if(!request()->routeIs('quote'))
                 <span class="absolute -top-3 left-5 flex h-20 w-20">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-50"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
@@ -284,23 +284,23 @@
 
 
         <a href="{{route('home')}}"
-            @class(['block hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->is('/')])
+            @class(['block hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('home')])
         >Home</a>
 
-        <a href="{{ route('gallery') }}"
-            @class(['block hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->is('gallery')])>Gallery</a>
-
-        <a href="{{ route('products') }}"
-            @class(['block hover:bg-primary-400 relative hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->is('products')])>
-            Products
+        <a href="{{ route('trellis') }}"
+            @class(['block hover:bg-primary-400 relative hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('trellis')])>
+            Trellis Gates
             <span @class(['text-white inline-block font-light italic pointer-events-none py-0.5 px-2 rounded-lg bg-amber-600 text-xs float-right'])>New</span>
         </a>
 
+        <a href="{{ route('gallery') }}"
+            @class(['block hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('gallery')])>Gallery</a>
+
         <a href="{{ route('faq') }}"
-            @class(['block hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->is('faq')])>FAQ</a>
+            @class(['block hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('faq')])>FAQ</a>
 
         <a href="{{ route('quote') }}"
-            @class(['block hover:bg-primary-400 relative overflow-hidden hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white border border-gray-300' => request()->is('quote')])>
+            @class(['block hover:bg-primary-400 relative overflow-hidden hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white border border-gray-300' => request()->routeIs('quote')])>
             <span>Free Quote</span></a>
 
 

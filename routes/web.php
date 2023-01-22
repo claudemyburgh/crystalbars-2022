@@ -17,6 +17,6 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('h
 Route::get('/gallery', \App\Http\Controllers\GalleryController::class)->name('gallery');
 Route::get('/faq', \App\Http\Controllers\FaqController::class)->name('faq');
 Route::get('/quote', \App\Http\Controllers\QuoteController::class)->name('quote');
-Route::get('/products', \App\Http\Controllers\ProductsController::class)->name('products');
+Route::get('/trellis-gates', \App\Http\Controllers\TrellisController::class)->name('trellis');
 
 Route::post('/quote-send', \App\Http\Controllers\SendQuoteController::class)->name('quote.send');
