@@ -28,7 +28,7 @@
                 gates, retractable security gates, and slam lock security gates.</p>
 
             <p class="text-lg">We offer a wide range of colors including white, charcoal, bronze and
-                grey to complement any style of property. These gates are perfect for
+                black to complement any style of property. These gates are perfect for
                 both residential and commercial use, and are sure to add an extra layer
                 of security to your property without compromising on style.</p>
 
