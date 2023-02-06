@@ -31,7 +31,6 @@ class CreateSiteMap extends Command
     {
         SitemapGenerator::create(config('app.url'))
             ->getSitemap()
-            ->add(Url::create('/')->setPriority(1))
             ->add(Url::create('/trellis-gates')->setPriority(1))
             ->add(Url::create('/gallery')->setPriority(0.8))
             ->add(Url::create('/faq')->setPriority(0.8))
