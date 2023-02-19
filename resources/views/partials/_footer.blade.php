@@ -19,5 +19,8 @@
 <footer class="py-6 bg-gray-100 border-t border-gray-300 ">
   <div class="wrapper">
     <p class="text-center font-light text-primary">Design and Developed by <a href="https://designbycode.co.za/" target="_blank">DesignByCode</a></p>
+      <p class="text-center text-sm text-gray-500 py-4">
+          Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+      </p>
   </div>
 </footer>
