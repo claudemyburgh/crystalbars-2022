@@ -59,7 +59,7 @@
       </p>
     </div>
     <div
-      class="p-4 md:p-6 lg:p-8 rounded-md bg-white shadow space-y-4 bg-primary-500 text-white col-span-3 md:col-span-1">
+      class="p-4 md:p-6 lg:p-8 rounded-md shadow space-y-4 bg-primary-500 text-white col-span-3 md:col-span-1">
       <header>
         <h3 class="text-4xl font-black tracking-tight font-heading">
           Photos Gallery

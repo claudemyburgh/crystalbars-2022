@@ -9,7 +9,8 @@
       </a>
     </div>
     <div class="mt-8 md:mt-0 md:order-1">
-      <p class="text-center text-base text-gray-400">&copy; {{now()->year}} from 2013 {{ config('app.name') }}, Inc. All rights reserved.</p>
+      <p class="text-center text-base text-gray-400">&copy;2013 to {{now()->year}}  {{ config('app.name') }}, Inc. All
+          rights reserved.</p>
     </div>
   </div>
 </footer>
