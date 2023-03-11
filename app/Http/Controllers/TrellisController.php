@@ -11,18 +11,18 @@ class TrellisController extends Controller
     public array $products = [
         [
             'size' => '900mm x 2100mm',
-            'price' => 'R 3300'
+            'price' => 'R 3500'
         ],
         [
             'size' => '1200mm x 2100mm',
-            'price' => 'R 4300'
+            'price' => 'R 4500'
         ],
         [
             'size' => '1500mm x 2100mm',
-            'price' => 'R 4900'
+            'price' => 'R 5000'
         ],
         [
-            'size' => '1900mm x 2100mm',
+            'size' => '1800mm x 2100mm',
             'price' => 'R 5500'
         ],
         [
