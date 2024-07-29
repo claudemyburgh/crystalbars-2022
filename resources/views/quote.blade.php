@@ -37,7 +37,7 @@
             </div>
         @endif
         @if(session('errors'))
-            <div class="rounded-md bg-red-100 shadow p-4 mb-4 lg:w-1/2 mx-auto">
+            <div class="rounded-md bg-red-100 shadow p-4 mb-4 lg:w-1/2 mx-auto ">
                 <div class="flex">
                     <div class="flex-shrink-0">
                         <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -57,20 +57,23 @@
             </div>
         @endif
 
-                <div id="form-quote"></div>
+{{--                <div id="form-quote"></div>--}}
 
-    <noscript>
-        <div class="mx-auto flex  lg:w-1/2">
+{{--    <noscript>--}}
+        <div class="mx-auto flex bg-white px-6 rounded  w-1/2">
             <form id="form-quote"
-                  class="min-w-full flex flex-1 flex-wrap my-6 w-1/2 bg-white shadow shadow-primary-500/20 p-6 rounded-md"
+                  class="min-w-full flex  flex-wrap my-6 "
                   method="POST" action="{{ route('quote.send') }}">
                 @csrf
                 @method('POST')
+                <x-honeypot />
+
                 <div class="p-2 w-full md:w-1/2">
                     <div class="relative">
                         <label for="name" class="leading-7 text-sm text-gray-600 font-semibold">Name</label>
                         <input type="text" id="name" name="name" value="{{old('name')}}"
-                               class="w-full bg-gray-100 bg-opacity-50 rounded border	border-gray-300 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-200 text-base	outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out @error('name') border-red-500   @enderror">
+                               class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-200 text-base	outline-none text-gray-700 py-1 px-3 leading-8
+                               transition-colors duration-200 ease-in-out @error('name') border-red-500   @enderror">
                         @error('name')
                         <span class="text-red-500 block py-1 text-sm">
 								{{$message}}
@@ -129,7 +132,7 @@
                 </div>
             </form>
         </div>
-    </noscript>
+{{--    </noscript>--}}
 
     </div>
 

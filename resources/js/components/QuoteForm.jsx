@@ -13,7 +13,8 @@ const QuoteForm = () => {
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
+    honey: ""
   })
 
   const [errors, setErrors] = useState()
@@ -39,7 +40,8 @@ const QuoteForm = () => {
         name: "",
         email: "",
         phone: "",
-        message: ""
+        message: "",
+        my_name: ""
       })
 
       confetti({
@@ -123,6 +125,12 @@ const QuoteForm = () => {
           )}
 
         </div>
+        my_name {JSON.stringify(form.my_name)}
+
+        <input type="text" id="my_name" name="my_name"
+               onChange={handleFormInput}
+               value={form.my_name}
+               className={`w-full bg-gray-100 bg-opacity-50 rounded border focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-200 text-base	outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out ${errors?.phone ? 'border-rose-700' : 'border-gray-300'}`}/>
 
         <div className={`p-2 w-full`}>
           <button disabled={loading} type="submit" onClick={submitForm}

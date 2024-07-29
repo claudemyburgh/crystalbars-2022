@@ -23,7 +23,7 @@ class SendQuoteController extends Controller
             'name' => 'required|string',
             'email' => 'required|string|email',
             'phone' => ['required', new Phone],
-            'message' => 'required'
+            'message' => 'required',
         ]);
 
 
