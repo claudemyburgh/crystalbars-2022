@@ -126,10 +126,7 @@
 
                 <div class="p-2 w-full">
                     <button type="submit"
-                            data-sitekey="{{ config('services.recaptcha.site_key') }}"
-                            data-callback='onSubmit'
-                            data-action='submit'
-                            class="g-recaptcha flex mx-auto text-white bg-primary-500 border-0 py-2 px-8 focus:outline-none hover:bg-primary-600 disabled:bg-gray-200 disabled:text-gray-400 rounded text-lg">
+                            class="/flex mx-auto text-white bg-primary-500 border-0 py-2 px-8 focus:outline-none hover:bg-primary-600 disabled:bg-gray-200 disabled:text-gray-400 rounded text-lg">
                         SUBMIT
                     </button>
                 </div>

@@ -16,12 +16,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-        function onSubmit(token) {
-            document.getElementById("quote_form").submit();
-        }
-    </script>
+{{--    <script src="https://www.google.com/recaptcha/api.js"></script>--}}
+{{--    <script>--}}
+{{--        function onSubmit(token) {--}}
+{{--            document.getElementById("quote_form").submit();--}}
+{{--        }--}}
+{{--    </script>--}}
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,800&family=Raleway:ital,wght@0,900;1,900&display=swap"
         rel="stylesheet">
