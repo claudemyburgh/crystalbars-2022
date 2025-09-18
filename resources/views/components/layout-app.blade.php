@@ -12,6 +12,16 @@
 
     <title>{{ config('app.name', 'Crystal Bars') }} | @yield('title', 'Transparent burglar bars in Cape Town')</title>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-672464774">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-672464774');
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
