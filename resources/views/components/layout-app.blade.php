@@ -26,12 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
-{{--    <script src="https://www.google.com/recaptcha/api.js"></script>--}}
-{{--    <script>--}}
-{{--        function onSubmit(token) {--}}
-{{--            document.getElementById("quote_form").submit();--}}
-{{--        }--}}
-{{--    </script>--}}
+
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,800&family=Raleway:ital,wght@0,900;1,900&display=swap"
         rel="stylesheet">
@@ -40,21 +35,6 @@
 
     <script src="{{ mix('js/app.js') }}" defer></script>
 
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', '{{ config('google.tagmanager.code') }}');</script>
-    <!-- End Google Tag Manager -->
 
 </head>
 <body class="antialiased bg-gray-100 text-gray-700 text-light overflow-x-hidden">
