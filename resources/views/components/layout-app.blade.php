@@ -22,6 +22,23 @@
         gtag('config', 'AW-672464774');
     </script>
 
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-672464774/BuOaCO_-8okYEIb_08AC',
+                'value': 5000.0,
+                'currency': 'ZAR',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
