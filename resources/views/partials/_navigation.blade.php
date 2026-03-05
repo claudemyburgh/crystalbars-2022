@@ -252,10 +252,10 @@
                @class(['hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('home')])
               >Home</a>
 
-            <a href="{{ route('trellis') }}"
-               @class(['hover:bg-primary-400 relative hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('trellis')])>
-                <span @class(['text-white font-light italic pointer-events-none py-0.5 px-2 rounded-lg bg-amber-600 text-xs absolute -top-2 -right-3'])>New</span>
-                Trellis Gates</a>
+{{--            <a href="{{ route('trellis') }}"--}}
+{{--               @class(['hover:bg-primary-400 relative hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('trellis')])>--}}
+{{--                <span @class(['text-white font-light italic pointer-events-none py-0.5 px-2 rounded-lg bg-amber-600 text-xs absolute -top-2 -right-3'])>New</span>--}}
+{{--                Trellis Gates</a>--}}
 
             <a href="{{ route('gallery') }}"
                @class(['hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('gallery')])>Gallery</a>
@@ -287,11 +287,11 @@
             @class(['block hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('home')])
         >Home</a>
 
-        <a href="{{ route('trellis') }}"
-            @class(['block hover:bg-primary-400 relative hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('trellis')])>
-            Trellis Gates
-            <span @class(['text-white inline-block font-light italic pointer-events-none py-0.5 px-2 rounded-lg bg-amber-600 text-xs float-right'])>New</span>
-        </a>
+{{--        <a href="{{ route('trellis') }}"--}}
+{{--            @class(['block hover:bg-primary-400 relative hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('trellis')])>--}}
+{{--            Trellis Gates--}}
+{{--            <span @class(['text-white inline-block font-light italic pointer-events-none py-0.5 px-2 rounded-lg bg-amber-600 text-xs float-right'])>New</span>--}}
+{{--        </a>--}}
 
         <a href="{{ route('gallery') }}"
             @class(['block hover:bg-primary-400 hover:text-white px-4 py-3 rounded-md text-sm font-bold tracking-wider uppercase', 'bg-primary-400 text-white' => request()->routeIs('gallery')])>Gallery</a>
